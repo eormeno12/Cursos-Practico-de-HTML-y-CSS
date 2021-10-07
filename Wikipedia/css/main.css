@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: Linux;
+}
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: Linux;
+    src: url('/Wikipedia/fonts/LinLibertine_R.otf');
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 9rem;
+}
+
+.logo-container {
+    height: max-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.languages-container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.languages-pair-1 .box-language-left{
+    margin-right: 6rem;
+}
+
+.languages-pair-2 .box-language-left{
+    margin-right: 12rem;
+}
+
+.languages-pair-3 .box-language-left{
+    margin-right: 15rem;
+}
+
+.languages-pair-1 .box-language-right{
+    margin-left: 6rem;
+}
+
+.languages-pair-2 .box-language-right{
+    margin-left: 12rem;
+}
+
+.languages-pair-3 .box-language-right{
+    margin-left: 15rem;
+}
+
+.box-language{
+    width: 16rem;
+    display: inline-block;
+    margin-bottom: 2.4rem;
+    list-style-type: none;
+}
+
+.wiki-language {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--main-font);
+}
+
+.wiki-language strong{
+    color: #36c;
+    font-size: 1.8rem;
+}
+
+.wiki-language:hover {
+    background-color: whitesmoke;
+}
+
+.wiki-language:hover strong{
+    text-decoration: underline;
+}
+
+.wiki-language small{
+    color: #54595d;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.main-input, .read-wikipedia{
+    width: 54rem;
+    height: 6.4rem;
+    margin: 0 auto;
+}
+
+.read-wikipedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.main-input-container, .read-wikipedia-container, .languages-options-container {
+    width: 42rem;
+    height: 4.4rem;
+    border: solid #54595d 0.1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.read-wikipedia-container{
+    background-color: transparent;
+    border: none;
+    margin-top: 1.8rem;
+}
+
+.languages-options-container{
+    width: 28rem;
+    height: 3.6rem;
+    background-color: whitesmoke;
+}
+
+.main-input-container:hover{
+    border: solid black 0.1rem;
+}
+
+.main-input-container:focus-within{
+    border: solid #36c 0.1rem;
+}
+
+.search-input{
+    flex-grow: 1;
+    background-color: transparent;
+    padding: 0.5rem 1rem; 
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-family: var(--main-font);
+}
+
+.language-input{
+    margin-right: 1.2rem;
+    height: 2.4rem;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.search-button{
+    width: 5.6rem;
+    height: 4.4rem;
+    order: 3;
+    border: none;
+    background-color: #36c;
+}
+
+.languages-options{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #36c;
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+    margin-left: 0.8rem;
+}
+
+.languages-options-container:hover{
+    background-color: transparent;
+}
+
+.line{
+    width: 5rem;
+    height: 0.01rem;
+    background-color: #54595d;
+}
+
+aside {
+    width: 100%;
+    height: fit-content;
+    display: inline-flex;
+    margin-top: 4rem;
+    border-top: solid #54595d 0.1rem;
+}
+
+.general-information{
+    width: 35%;
+    height: fit-content;
+}
+
+.general-information, .projects{
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.general-information-container{
+    width: 100%;
+    height: fit-content;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.general-information-container li{
+    width: 65%;
+    padding: 1rem;
+    margin-bottom: 4.8rem;
+}
+
+.information-box, .project-box{
+    display: inline-flex;
+    color: #54595d;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+}
+
+.information-box a{
+    text-decoration: none;
+    color: #36c;
+}
+
+.information-box a:hover{
+    text-decoration: underline;
+}
+
+.information-box figure img, .project-box figure img{
+    width: 4.2rem;
+    height: 4.2rem;
+    margin-right: 2rem;
+}
+
+.information-text{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    justify-items: flex-start;
+}
+
+.downloads-box {
+    margin-top: 2rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.downloads-box a figure img {
+    height: 3.7rem;
+    width: 11.1rem;
+}
+
+.projects{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.projects-container{
+    width: 100%;
+    height: fit-content;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    justify-items: flex-start;
+}
+
+.project-box {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.project-box a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #54595d;
+}
+
+.project-box a strong{
+    color: #36c;
+}
+
+.project-box:hover{
+    background-color: whitesmoke;
+}
+
+.project-box a:hover strong{
+    text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    height: fit-content;
+    display: inline-flex;
+    border-top: solid #54595d 0.1rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.license-information, .terms-container{
+    font-family: var(--main-font);
+    font-size: 1.3rem;
+    color: #54595d;
+    margin-top: 1.6rem;
+    margin-bottom: 3.6rem;
+}
+
+
+.license-information a, .terms-container{
+    color: #36c;
+    text-decoration: none;
+}
+
+.license-information a:hover, .terms-container li:hover{
+    text-decoration: underline;
+}
+
+.terms-container{
+    display: inline-flex;
+}
+
+.terms-container li{
+    margin-left: 3rem;
+}
+
+#main-logo {
+    height: 3.2rem;
+}
+
+#main-slogan {
+    font-family: var(--main-font);
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+
+#main-image {
+    width: 24rem;  
+    margin-top: 10rem; 
+}
+
+#search-icon, #languages-icon {
+    margin: 0 auto;
+    width: 2.2rem;
+}
+
+#downloads-item{
+    background-color: rgb(248, 247, 247);
+}
